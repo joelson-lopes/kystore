@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mandaic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Mandaic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@keyframes slidebottom {
+    from {
+      margin-bottom: -80%;
+      width: 300%;
+      }
+  
+      to {
+        margin-bottom: 0%;
+        width: 100%;
+        }
+      }
+      
+body{
+  animation-duration: 3s;
+  animation-name: slidebottom;
+  background-color: #cafdf8cf;
+  
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  margin-bottom: 5%;
+
+  gap: 60%;
+  padding: 60px 20px 40px 30px;
+  
+  
+  width: 100vw;
+  height: 15vh;
+}
+#loras{
+  color:#00b4d8 ;
+}
+.logotipo{
+    width: 25vw;
+    height: auto;
+    border-radius: 50%;
+
+    transform: translateX(-15%);
+}
+.assets{
+  width: 4vw;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5%  ;
+}
+marquee{
+    border-radius: 2px;
+    padding: 5px;
+    width: 100vw;
+    color: #f4f4f4;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #00b4d8;
+}
+.sobre,
+.servicos{
+width: 93vw;
+height: auto;
+padding: 20px;
+border-radius: 20px;
+
+font-weight: 400;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+/* border: 1px outset black; */
+/* box-shadow: 10px 12px 28px 8px rgba(38,38,38,0.19); */
+}
+.sobre h1,
+.servicos h1{
+  color: #00b4d8;
+  font-size: 2em;
+  font-family: "Rboto", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.sobre p,
+.servicos p{
+  animation-duration: 3s;
+  animation-name: slidebottom;
+  color: black;
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-align: left;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 2% 0 5% 0;
+}
+footer a{
+  color: rgba(90, 86, 86, 0.911);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+} 
+h5{
+  color: rgba(90, 86, 86, 0.911);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.contactos{
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  
+  width: 93vw;
+  height: auto;
+  padding: 20px;
+  font-weight: 400;
+  
+  animation-duration: 3s;
+  animation-name: slidebottom;  
+}
+
+.contactos h1{
+  color: #00b4d8;
+  font-size: 2em;
+  font-family: "Rboto", 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: left;
+
+} 
+
+.email,
+.whatsapp,
+.call-me,
+.instagram{  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 85vw;
+  height: 5vh;
+  margin-top: 3%;
+}
+
+.email a,
+.whatsapp a,
+.call-me a,
+.instagram a{
+  color: black;
+  background-color: #cafdf8cf;
+  border-radius: 10px;
+  font-family: "Noto Sans Mandaic", sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size:1em;
+
+  /* border: 1px solid black; */
+  padding: 10px 25px 10px 25px;
+  
+  backdrop-filter: blur(4px);
+}
+
+.email a:hover,
+.whatsapp a:hover,
+.call-me a:hover,
+.instagram a:hover{
+  cursor: pointer;
+  background-color: #00b4d8c9;
+}
+
+
+@keyframes slideitop {
+    from {
+      margin-bottom: 50%;
+      width: 300%;
+    }
+    
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
+  }
+
+ .firstpicture{    
+    margin-bottom: 5%;
+    width: 90vw;
+    height: auto;
+    border-radius: 10px;
+
+    animation-duration: 3s;
+    animation-name: slidetop;
+} 
