@@ -3,6 +3,11 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 
+
+::selection{
+    /* color: white; */
+    background-color: #00b4d8;
+}
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +88,7 @@ main {
 marquee{
     width: 100vw;
     height: auto;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 3%;
     color: white;
     background-color: #00b4d8;
@@ -91,7 +96,7 @@ marquee{
 
 b{
     text-decoration: none;
-    margin-right: 300px;
+    margin-right: 30px;
 }
 
 .container {
@@ -141,7 +146,7 @@ b{
   margin-bottom: 40px;
 }
 
-.goals > .text{ 
+.goals > .text-g{ 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
@@ -150,13 +155,21 @@ b{
 
 .sobre{
 display: flex;
-flex-flow: row wrap;
-align-items: center;
-justify-content: space-between;
+flex-flow: column wrap;
+align-items: start;
+justify-content: center;
 width: 80vw;
 height: auto;
 padding: 20px;
-margin-bottom: 2%;
+
+}
+
+.text-s{
+    gap: 20%;
+    display: inline-flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-between;
 }
 
 .servicos h1, .sobre h1, .contactos h1, .goals h1 {
@@ -164,6 +177,7 @@ margin-bottom: 2%;
   color: #00b4d8;
   margin-bottom: 20px;
   text-transform: capitalize;
+  text-align: left;
 }
 
 .servicos p, .sobre p, .contactos a {
@@ -171,18 +185,18 @@ margin-bottom: 2%;
   font-size: 1rem;
   line-height: 1.6;
   text-decoration: none;
-
+  text-align: left;
 
   width: 100%;
   margin-bottom: 40px;
 }
 
-.text {
+/* .text {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 24px;
   margin-top: 20px;
-}
+} */
 
 .goals-text {
   padding: 20px;
@@ -202,7 +216,7 @@ margin-bottom: 2%;
 #about-picture, .firstpicture {
   width: 100%;
   max-width: 200px;
-  border-radius: 10px;
+  border-radius: 50%;
 }
 
 footer {
@@ -257,6 +271,8 @@ h5 {
 
   .text-bg {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   nav {
@@ -268,14 +284,29 @@ h5 {
     width: 30px;
     height: 30px;
   }
+
+  
 }
 
 @media (max-width: 480px) {
+    *{
+        margin-top: 3%;
+    }
+    header{
+        flex-direction: column;
+        gap: 10px;
+        /* margin-top: 20%; */
+    }
   #maintitle {
     font-size: 1.5rem;
   }
 
-.goals > .text{
+  .words{
+    width: 100%;
+    height: auto;
+  }
+
+.goals > .text-g{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -289,7 +320,11 @@ h5 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
+    text-align: center;
+  }
+
+  .sobre > .text-s p{
+    text-align: center;
   }
 
   .servicos h1, .sobre h1, .contactos h1, .goals h1 {
@@ -299,6 +334,16 @@ h5 {
 
   .carousel-image, #about-picture, .firstpicture {
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 200px;
   }
 }
 
