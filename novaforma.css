@@ -61,6 +61,9 @@ nav {
   display: flex;
   gap: 20px;
 }
+#menu{
+    display: none;
+}
 
 .navbar-list {
   color: #fff;
@@ -256,46 +259,43 @@ h5 {
 
     to { opacity: 1; transform: translateY(0); }
   }
-  
   @keyframes slidebottom {
     from { opacity: 0; transform: translateY(50px); }
 
     to { opacity: 1; transform: translateY(0); }
   }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .text-bg {
+.on-show {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
+    justify-content: end;
+    width: 10vw;
+    height:17vh;
+    background-color: #08849c36;
+}
+.on-show a{
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .logotipogif {
-    width: 30px;
-    height: 30px;
-  }
-
-  
 }
 
-@media (max-width: 480px) {
-    *{
-        margin-top: 3%;
-    }
+
+@media (max-width: 490px) {
     header{
-        flex-direction: column;
+        padding-top: 10%;
+        flex-direction: row;
         gap: 10px;
         /* margin-top: 20%; */
+    }
+    #span{
+        display: flex;
+        color: white;
+    }
+    nav{
+        display: none;
     }
   #maintitle {
     font-size: 1.5rem;
@@ -345,7 +345,56 @@ h5 {
     width: 310px;
     height: 200px;
   }
+
 }
 
+ @media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .text-bg {
+      flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #span{
+    display: none;
+  }
+
+  .logotipogif {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*
+@media (min-width:768px) {
+            
+    #span{
+        display: none; 
+    }
+    #span:hover{
+        background-color: white;
+        color: black;
+    }
+    nav{
+        display: flex;
+    }
+}
+
+@media (min-width:1320px) {
+    #span{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+} */
 
 

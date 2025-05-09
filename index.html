@@ -26,6 +26,7 @@
             <a href="#services" class="navbar-list">services</a>
             <a href="#contacts" class="navbar-list">contact us</a>
         </nav>
+        <span id="span" class="material-symbols-outlined" onclick="ongoing()" style="max-width: 490px;">menu</span>
     </header>
 
     <main id="main">
@@ -173,20 +174,19 @@
 
 
     <script>
-        const sections = document.querySelectorAll("section");
-        const observer = new IntersectionObserver(entries => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
+        function clickSpan() {
+            if (nav.style.display == 'flex') {
+                nav.style.display = 'none'
+            } else {
+                nav.style.display = 'flex' 
             }
-          });
-        }, { threshold: 0.1 });
-      
-        sections.forEach(section => {
-          observer.observe(section);
-        });
-      </script>
-      
+        }
+    </script>     
+    <script>
+        function ongoing() {
+            alert("O seu menu mobile seria aberto aqui");
+        }
+    </script> 
 </body>
 
 </html>
