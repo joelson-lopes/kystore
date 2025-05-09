@@ -95,7 +95,7 @@ main {
 marquee {
     width: 99vw;
     height: auto;
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 3%;
     color: white;
     background-color: #00b4d8;
@@ -359,7 +359,7 @@ h5 {
     marquee {
     width: 99vw;
     height: auto;
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 3%;
     color: white;
     background-color: #00b4d8;
@@ -480,7 +480,7 @@ h5 {
     marquee {
     width: 99vw;
     height: auto;
-    padding: 5px;
+    padding: 0px;
     margin-bottom: 3%;
     color: white;
     background-color: #00b4d8;
