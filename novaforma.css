@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 header {
@@ -92,17 +92,17 @@ main {
 }
 
 marquee {
-    width: 100vw;
+    width: 99vw;
     height: auto;
     padding: 20px;
     margin-bottom: 3%;
     color: white;
-    background-color: #93B2F4;
+    background-color: #00b4d8;
 }
 
 b {
     text-decoration: none;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 .container {
@@ -182,6 +182,52 @@ b {
     justify-content: space-between;
 }
 
+.contactos > .text-c {
+    display: flex;
+    flex-direction: row;
+
+    width: 80vw;
+    height: auto;
+    gap: 20%;
+    color: wheat;
+    background-color: #00b4d8;
+    padding: 20px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    padding: 2cap;
+}
+
+.text-c h2,
+h3 {
+    color: white;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.text-c .new-icons-link {
+    text-indent: 2cap;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+
+.text-c .new-icons-link:hover {
+    color: #f0f0f0;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+#icone-cc {
+    display: inline-flex;
+    align-items: center;
+}
+
 .servicos h1,
 .sobre h1,
 .contactos h1,
@@ -206,14 +252,8 @@ b {
     margin-bottom: 40px;
 }
 
-/* .text {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
-} */
-
 .goals-text {
+    display: inline;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
@@ -221,6 +261,7 @@ b {
     text-align: center;
     font-size: 1rem;
     color: #555;
+    text-indent: 1cap;
 }
 
 .assets {
@@ -310,7 +351,7 @@ h5 {
 }
 
 
-@media (max-width: 490px) {
+@media (max-width: 480px) {
     header {
         padding-top: 10%;
         flex-direction: row;
@@ -350,11 +391,11 @@ h5 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
     }
 
     .sobre>.text-s p {
-        text-align: center;
+        text-align: justify;
     }
 
     .servicos h1,
@@ -373,8 +414,18 @@ h5 {
         justify-content: center;
     }
 
+    .contactos>.text-c {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 5%;
+    }
+
     iframe {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 310px;
@@ -400,15 +451,30 @@ h5 {
         flex-wrap: wrap;
         justify-content: center;
     }
-    #span{
+
+    #span {
         display: none;
     }
 
+    .contactos>.text-c {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding: 20px;
+    }
 
+        iframe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 555px;
+        height: 300px;
+    }
 
     .logotipogif {
         width: 30px;
         height: 30px;
     }
 }
-
