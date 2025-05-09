@@ -356,6 +356,15 @@ h5 {
         animation-name: slideitop;
     }
 
+    marquee {
+    width: 99vw;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 3%;
+    color: white;
+    background-color: #00b4d8;
+}
+
     header {
         padding-top: 10%;
         flex-direction: row;
@@ -467,6 +476,15 @@ h5 {
         animation-duration: 3s;
         animation-name: slideitop;
     }
+
+    marquee {
+    width: 99vw;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 3%;
+    color: white;
+    background-color: #00b4d8;
+}
 
     header {
         flex-direction: row;
