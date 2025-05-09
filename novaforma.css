@@ -21,6 +21,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9;
+
+    animation-duration: 10s;
+    animation-name: slidebottom;
 }
 
 header {
@@ -348,6 +351,11 @@ h5 {
 
 
 @media (max-width: 480px) {
+    body {
+        animation-duration: 3s;
+        animation-name: slideitop;
+    }
+
     header {
         padding-top: 10%;
         flex-direction: row;
@@ -395,10 +403,13 @@ h5 {
 
     .servicos h1,
     .sobre h1,
-    .contactos h1,
     .goals h1 {
         text-align: left;
         font-size: 1.5rem;
+    }
+
+    .contactos h1 {
+        display: none;
     }
 
     .carousel-image,
@@ -417,27 +428,28 @@ h5 {
         text-align: center;
         margin-left: 5%;
     }
+
     .sub {
-    display: flex;
-    flex-direction: column;
-    padding: 2cap;
-}
+        display: flex;
+        flex-direction: column;
+        padding: 2cap;
+    }
 
-.text-c h2{
-    color: white;
-    align-items: center;
-    text-transform: capitalize;
-    text-align: left;
-    font-size: 1.5rem;
-}
+    .text-c h2 {
+        color: white;
+        align-items: center;
+        text-transform: capitalize;
+        text-align: left;
+        font-size: 1.5rem;
+    }
 
-.text-c .new-icons-link {
-    text-indent: 2cap;
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: white;
-    text-decoration: none;
-}
+    .text-c .new-icons-link {
+        text-indent: 2cap;
+        font-size: 0.9rem;
+        font-weight: normal;
+        color: white;
+        text-decoration: none;
+    }
 
     iframe {
         display: flex;
@@ -451,6 +463,11 @@ h5 {
 }
 
 @media (min-width: 768px) {
+    body {
+        animation-duration: 3s;
+        animation-name: slideitop;
+    }
+
     header {
         flex-direction: row;
         gap: 10px;
@@ -469,6 +486,10 @@ h5 {
     }
 
     #span {
+        display: none;
+    }
+
+    .contactos h1 {
         display: none;
     }
 
