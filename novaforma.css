@@ -354,6 +354,7 @@ h5 {
     body {
         animation-duration: 3s;
         animation-name: slideitop;
+        background-color: #f9f9f9;
     }
 
     marquee {
@@ -369,7 +370,17 @@ h5 {
         padding-top: 10%;
         flex-direction: row;
         gap: 10px;
+        background-color: #00b4d8;
     }
+    #maintitle {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 
     #span {
         display: flex;
@@ -475,6 +486,7 @@ h5 {
     body {
         animation-duration: 3s;
         animation-name: slideitop;
+        background-color: #f9f9f9;
     }
 
     marquee {
@@ -489,7 +501,18 @@ h5 {
     header {
         flex-direction: row;
         gap: 10px;
+        background-color: #00b4d8;
     }
+
+        #maintitle {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 
     .text-bg {
         flex-direction: row;
@@ -502,7 +525,9 @@ h5 {
         flex-wrap: wrap;
         justify-content: center;
     }
-
+.navbar-list{
+    color: white;
+}
     #span {
         display: none;
     }
