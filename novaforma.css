@@ -187,14 +187,9 @@ b {
     width: 80vw;
     height: auto;
     gap: 20%;
-    color: black;
+    color: white;
+    background-color: #00b4d8;
     padding: 20px;
-}
-
-aside {
-    display: flex;
-    flex-direction: column;
-    padding: 2cap;
 }
 
 .sub {
@@ -422,14 +417,35 @@ h5 {
         text-align: center;
         margin-left: 5%;
     }
+    .sub {
+    display: flex;
+    flex-direction: column;
+    padding: 2cap;
+}
+
+.text-c h2{
+    color: white;
+    align-items: center;
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.text-c .new-icons-link {
+    text-indent: 2cap;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
 
     iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 310px;
-        height: 200px;
+        width: 18rem;
+        height: auto;
     }
 
 }
