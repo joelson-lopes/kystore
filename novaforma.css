@@ -191,6 +191,12 @@ b {
     padding: 20px;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 2cap;
+}
+
 .sub {
     display: flex;
     flex-direction: column;
