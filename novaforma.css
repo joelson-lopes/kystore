@@ -367,7 +367,7 @@ h5 {
 }
 
     header {
-        padding-top: 1%;
+        padding-top: 10%;
         flex-direction: row;
         gap: 10px;
         background-color: #00b4d8;
