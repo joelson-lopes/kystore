@@ -1,2 +1,2 @@
 # kystore
- loja de teleomóveis
+ loja de telemóveis
