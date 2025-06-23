@@ -3,6 +3,10 @@
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 
+:root{
+    --cor1: #16C9DE;
+}
+
 ::selection {
     background-color: #00b4d8;
 }
@@ -198,31 +202,82 @@ b {
     justify-content: space-between;
 }
 
-.contactos>.text-c {
+.contactos>.inside >.p {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+     align-items: center; 
+    justify-content: center; 
 
     width: 99vw;
     height: auto;
-    gap: 20%;
+    gap: 2%;
     color: white;
-    background-color: #00b4d8;
+    background-color: #f0f0f0;
     padding: 20px;
 }
 
-.sub {
+#contacte{
+    color:#00b4d8;
+}
+
+.inside {
+    width: 99vw;
+    height: auto;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    padding-top: 10px;
 
     gap: 5cap;
-
-    padding: 2cap;
-    text-align: left;
+    
+    text-align: center;
+    background-color: #f0f0f0;
 }
+
+#phone{
+    width: 25vw;
+    height: 40vh;
+    padding:20px;
+    background: linear-gradient(to top,#205EE5, var(--cor1));
+}
+
+#phone h3{
+    color: white;
+    text-align: center;
+}  
+
+#phone > .new-icons-link{
+color: #fff;
+}
+
+
+.address,
+.date-time{
+    width: 25vw;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 3px;
+
+    color: #000;
+
+    border: 1px solid #8186C3;
+    background-color: white;
+}
+
+
+.address h3,
+.date-time h3{
+    color: var(--cor1);
+    text-align: center;
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
 
 .p {
     display: flex;
@@ -323,18 +378,6 @@ h3 {
     border-radius: 50%;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-footer a {
-    color: #5a5656;
-    font-size: 0.9rem;
-    text-decoration: none;
-}
-
 h5 {
     color: #5a5656;
     font-size: 0.8rem;
@@ -378,6 +421,41 @@ h5 {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
 
+}
+
+footer {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.footer-h1{
+    color: white;
+    font-size: 1rem;
+}
+
+.link{
+        text-indent: 1%;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.288);
+    text-decoration: none;
+}
+.link:hover {
+    color: #f0f0f0;
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+
+footer a {
+    color: #5a5656;
+    font-size: 0.9rem;
+    text-decoration: none;
 }
 
 @keyframes flutuar {
@@ -622,9 +700,9 @@ h5 {
 
     .contactos>.text-c {
         display: flex;
-        flex-direction: column;
-        align-items: left;
-        justify-content: center;
+        flex-direction: row;
+        /* align-items: left;
+        justify-content: center; */
         padding: 20px;
     }
 
